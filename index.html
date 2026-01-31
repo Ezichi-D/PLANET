@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solar System Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-overlay"></div>
+    <div class="header-content container">
+      <h1>The Solar System</h1>
+      <p>Exploring planets, science, and the wonders of our universe.</p>
+      <div class="header-buttons">
+        <a href="#about" class="btn primary">Explore Now</a>
+        <a href="#contact" class="btn secondary">Contact Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MEDIA SHOWCASE SECTION -->
+  <section class="section media-showcase">
+
+    <!-- VIDEO PLACEHOLDER -->
+    <div class="video-wrapper">
+     <video controls autoplay>
+        <source src="earth.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <!-- PLANET IMAGE GALLERY -->
+    <div class="planet-gallery">
+      <img src="pexels-zelch-12498801.jpg" alt="Mercury">
+      <img src="pexels-t-keawkanok-3252323-13229275.jpg" alt="Venus">
+      <img src="pexels-pixabay-41950.jpg" alt="Earth">
+      <img src="pexels-zelch-12491650.jpg" alt="Mars">
+      <img src="pexels-zelch-12498804.jpg" alt="Mars">
+      <img src="pexels-zelch-20337599.jpg" alt="Mars">
+      <img src="pexels-zelch-20337604.jpg" alt="Mars">
+
+    </div>
+
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <h2>About the Solar System</h2>
+    <p>
+      The solar system consists of the Sun and all celestial bodies bound to it by gravity.
+      This includes eight planets, their moons, dwarf planets, asteroids, and comets.
+      Scientists continue to study planetary motion, composition, and the possibility of life beyond Earth.
+    </p>
+  </section>
+
+  <!-- PLANETARY DATA TABLE -->
+<section class="section dark">
+  <h2>Planetary Facts (NASA)</h2>
+  <div class="table-wrapper">
+    <table class="planet-table">
+      <thead>
+        <tr>
+          <th>Planet</th>
+          <th>Diameter (km)</th>
+          <th>Mass (10^24 kg)</th>
+          <th>Gravity (m/s²)</th>
+          <th>Orbit Period</th>
+          <th>Number of Moons</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mercury</td>
+          <td>4,879</td>
+          <td>0.33</td>
+          <td>3.7</td>
+          <td>88 days</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Venus</td>
+          <td>12,104</td>
+          <td>4.87</td>
+          <td>8.87</td>
+          <td>225 days</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Earth</td>
+          <td>12,742</td>
+          <td>5.97</td>
+          <td>9.81</td>
+          <td>365 days</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Mars</td>
+          <td>6,779</td>
+          <td>0.642</td>
+          <td>3.71</td>
+          <td>687 days</td>
+          <td>2</td>
+        </tr>
+        <tr>
+          <td>Jupiter</td>
+          <td>139,820</td>
+          <td>1,898</td>
+          <td>24.79</td>
+          <td>12 years</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>Saturn</td>
+          <td>116,460</td>
+          <td>568</td>
+          <td>10.44</td>
+          <td>29 years</td>
+          <td>82</td>
+        </tr>
+        <tr>
+          <td>Uranus</td>
+          <td>50,724</td>
+          <td>86.8</td>
+          <td>8.87</td>
+          <td>84 years</td>
+          <td>27</td>
+        </tr>
+        <tr>
+          <td>Neptune</td>
+          <td>49,244</td>
+          <td>102</td>
+          <td>11.15</td>
+          <td>165 years</td>
+          <td>14</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+  <!-- CONTACT FORM -->
+  <section id="contact" class="section">
+    <h2>Questions About Planetary Science?</h2>
+
+    <form class="contact-form">
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email Address" required>
+      <select name="city" id="city-select">
+        <option value="">Select a City</option>
+        <option value="Kaduna">Kaduna</option>
+        <option value="Benin">Benin</option>
+        <option value="Abeokuta">Abeokuta</option>
+        <option value="Port Harcourt">Port Harcourt</option>
+        <option value="Kano">Kano</option>
+        <option value="Jos">Jos</option>
+        <option value="Osogbo">Osogbo</option>
+        <option value="Lagos">Lagos</option>
+        <option value="Ibadan">Ibadan</option>
+        <option value="Owerri">Owerri</option>
+      </select>
+      <input type="tel" placeholder="Phone Number" minlength="11" maxlength="20">
+
+      <textarea placeholder="Your Message" maxlength="100" rows="6"></textarea>
+
+      <!-- PREFERRED CONTACT METHOD -->
+      <fieldset>
+        <legend>Preferred Contact Method</legend>
+        <label><input type="radio" name="contact-method"> Email</label>
+        <label><input type="radio" name="contact-method"> Phone</label>
+        <label><input type="radio" name="contact-method"> Both</label>
+      </fieldset>
+
+      <!-- HOW DID YOU HEAR ABOUT US -->
+      <fieldset>
+        <legend>How did you hear about us?</legend>
+        <label><input type="checkbox"> Friend</label>
+        <label><input type="checkbox"> TS Academy</label>
+        <label><input type="checkbox"> Others</label>
+      </fieldset>
+
+      <button type="submit" class="btn primary">Submit</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content container">
+      <div>
+        <h3>About</h3>
+        <p>This project explores the solar system using scientific data and modern web design.</p>
+      </div>
+      <div>
+        <h3>Credits</h3>
+        <p>Planetary data sourced from NASA.</p>
+      </div>
+    </div>
+
+    <p class="copyright">© 2026 Solar System Project</p>
+  </footer>
+
+</body>
+</html>
