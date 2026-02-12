@@ -21,6 +21,21 @@ body {
   margin: auto;
 }
 
+
+
+header {
+  background: url(pexels-zelch-12491599.jpg) center/cover no-repeat;
+}
+
+
+.header-wrapper.logo {
+  display: flex;
+  align-items: center;
+  height:1000px
+}
+
+
+
 .section {
   padding: 4rem 2rem;
   text-align: center;
@@ -34,7 +49,6 @@ body {
 /* HEADER */
 .header {
   height: 100vh;
-  background: url("pexels-zelch-12491599.jpg") center/cover no-repeat;
   position: relative;
   display: flex;
   align-items: center;
@@ -42,6 +56,15 @@ body {
   color: white;
 }
 
+
+header {
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  height:
+}
 .header-overlay {
   position: absolute;
   inset: 0;
